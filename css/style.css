@@ -1,0 +1,19 @@
+body {
+  margin: 0 auto;
+}
+
+#head {
+  text-align: center;
+}
+#inputForm {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.list-container * {
+  display: flex;
+  justify-content: center;
+}
+#clearBtn {
+  margin: 0 auto;
+}
