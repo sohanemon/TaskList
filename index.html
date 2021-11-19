@@ -3,34 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+      integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>TaskList</title>
   </head>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
-    integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-  <link rel="stylesheet" href="css/style.css" />
+
   <body>
     <div class="container">
       <h1 id="head">TaskList</h1>
-      <form id="inputForm">
-        <input type="text" id="inputField" placeholder="Enter Task" />
-        <button id="sendBtn">Send!</button>
+      <form id="task_form">
+        <input type="text" id="new_task" placeholder="Enter Task" />
+        <input type="submit" value="Send!" />
       </form>
-    </div>
-    <hr />
-    <div class="list-container">
+      <hr />
       <h4>List of Task</h4>
-      <input type="text" placeholder="Filter" style="margin: 19px auto" />
-      <ul id="list">
-        <p>No task available?</p>
-        <!-- Added task may show here! -->
-      </ul>
-      <button id="clearBtn">Clear all</button>
+      <input type="text" id="task_filter" placeholder="Filter" />
+      <ul id="tasks"></ul>
+      <button id="clear_task_btn">Clear all</button>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
